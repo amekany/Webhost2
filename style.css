@@ -1,0 +1,92 @@
+/* Original content from your file + additional styles */
+
+body, html {
+  margin: 0;
+    padding: 0;
+      font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        }
+
+        .hero-section {
+          position: relative;
+            width: 100%;
+              height: 100vh;
+                overflow: hidden;
+                }
+
+                .bg-video {
+                  position: absolute;
+                    top: 0;
+                      left: 0;
+                        width: 100%;
+                          height: 100%;
+                            object-fit: cover;
+                              z-index: -1;
+                              }
+
+                              .footer {
+                                background-color: #000;
+                                  color: white;
+                                    text-align: center;
+                                      padding: 20px;
+                                      }
+
+                                      .footer-logo {
+                                        max-width: 120px;
+                                          margin-bottom: 10px;
+                                          }
+
+                                          .header {
+                                            display: flex;
+                                              justify-content: space-between;
+                                                align-items: center;
+                                                  padding: 10px 20px;
+                                                    background-color: rgba(0, 0, 0, 0.7);
+                                                      position: fixed;
+                                                        width: 100%;
+                                                          z-index: 10;
+                                                          }
+
+                                                          .nav-links {
+                                                            display: flex;
+                                                              gap: 15px;
+                                                              }
+
+                                                              .nav-links a {
+                                                                color: white;
+                                                                  text-decoration: none;
+                                                                  }
+
+                                                                  .burger {
+                                                                    display: none;
+                                                                      flex-direction: column;
+                                                                        cursor: pointer;
+                                                                        }
+
+                                                                        .burger .bar {
+                                                                          width: 25px;
+                                                                            height: 3px;
+                                                                              background-color: white;
+                                                                                margin: 4px 0;
+                                                                                }
+
+                                                                                @media (max-width: 768px) {
+                                                                                  .nav-links {
+                                                                                      display: none;
+                                                                                          flex-direction: column;
+                                                                                              background-color: #000;
+                                                                                                  position: absolute;
+                                                                                                      top: 60px;
+                                                                                                          right: 10px;
+                                                                                                              padding: 10px;
+                                                                                                                  border-radius: 5px;
+                                                                                                                    }
+
+                                                                                                                      .burger {
+                                                                                                                          display: flex;
+                                                                                                                            }
+
+                                                                                                                              .nav-links.active {
+                                                                                                                                  display: flex;
+                                                                                                                                    }
+                                                                                                                                    }
